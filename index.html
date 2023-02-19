@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Major+Mono+Display&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .grad1 {
+        background-image: linear-gradient(to right, #F0F66E, #F0F8EA);
+    }
+    .text-light {
+        color: transparent !important;
+    }
+    .text-primary {
+        font-family: 'Major Mono Display', monospace;
+        color: #252422 !important;
+        font-size: 45px;
+    }
+    .text-primary2 {
+        font-family: 'Major Mono Display', monospace;
+        color: #252422 !important;
+        font-size: 10px;
+    }
+    .main-content {
+        border-radius: 15px;
+        background-color: #F0F8EA !important;
+        box-shadow: 5px 5px 5px #5E5E5E54;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .text-success {
+        font-family: 'Libre Franklin', sans-serif;
+        color: #252422 !important;
+        font-size:30px;
+    }
+    .btn-primary {
+        border-radius: 50px;
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 24px;
+        color: #252422 !important;
+        border-color: transparent !important;
+        box-shadow: 3px 3px 3px #5E5E5E54;
+        background-color: #d5dbd0 !important;
+    }
+    button:hover {
+        color: #252422 !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
+        box-shadow: 3px 3px 3px 3px transparent;
+    }
+  </style>
+      
+</head>
+<body class="grad1">
+
+        
+    
+<div class="container">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+      <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <span class="text-light">big slay</span>
+      </a>
+      <form action="https://www.todayifoundout.com/wp-content/uploads/2017/11/rick-astley.png"> 
+         <button  style="background-color: transparent; border-color: transparent;">
+        <img class="bi me-2" width="100" height="100" src="https://i.imgur.com/bgTzUdN.png" alt="bee">
+        <span class="text-primary2">Don't Click It</span>
+        <span class="text-primary2">Don't Do It</span>
+      </button>
+    </form>
+    
+      <div class="col-md-3 text-end"> 
+        <span class="text-light">mega slay</span>
+      </div>
+  </header>
+</div>
+<div class="container text-center">
+  <div class="row justify-content-md-center">
+    <div class="col-sm-4">
+      <span class="text-light">naurururu</span>
+    </div>
+    <div class="col-sm-4">
+      <span class="text-primary">WORDSCAPES</span>
+
+  
+    </div>
+    <div class="col col-sm-4">
+      <span class="text-light">iyak na q</span>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <span class="text-light">help</span>
+    </div>
+    <div class="col-sm-6 main-content">
+      <span class="text-success">  
+        <input type="text" class="form-control" id="txtFood" placeholder=""></span>
+        <button class="btn btn-primary" onclick="btnPress()" id="buttonsub">Submit</button>
+
+        <script>
+          
+             document.getElementById("txtFood").disabled = true;
+        function addToList(word) {
+            document.getElementById("validation").innerHTML += "<li class='list-group-item' onclick='showItem(event)'>"+ word + "</li>"
+        }
+        function btnPress() {
+         
+          var f = document.getElementById("txtFood").placeholder;
+          
+        document.getElementById("txtFood").placeholder = "";
+            document.getElementById("1BUTTON").disabled = false;
+            document.getElementById("2BUTTON").disabled = false;
+            document.getElementById("3BUTTON").disabled = false;
+            document.getElementById("4BUTTON").disabled = false;
+            document.getElementById("5BUTTON").disabled = false;
+            document.getElementById("6BUTTON").disabled = false;
+
+          var z = 0;
+
+            if(f === "ELF"){
+
+              document.getElementById("word1").innerHTML = "ELF";
+
+            }
+            else if(f === "FOR"){
+
+              document.getElementById("word2").innerHTML = "FOR";
+
+           
+            }
+            else if(f === "ORE"){
+              document.getElementById("word3").innerHTML = "ORE";
+            }
+            else if(f === "ROE"){
+              document.getElementById("word4").innerHTML = "ROE";
+            }
+            else if(f === "FRO"){
+              document.getElementById("word5").innerHTML = "FRO";
+            }
+            else if(f === "OWE"){
+              document.getElementById("word6").innerHTML = "OWE";
+            }
+            else if(f === "ROW"){
+              document.getElementById("word7").innerHTML = "ROW";
+            }
+            else if(f === "FEW"){
+              document.getElementById("word8").innerHTML = "FEW";
+            }
+            else if(f === "LOW"){
+              document.getElementById("word9").innerHTML = "LOW";
+            }
+            else if(f === "OWL"){
+              document.getElementById("word10").innerHTML = "OWL";
+            }
+            else if(f === "WOE"){
+              document.getElementById("word11").innerHTML = "WOE";
+            }
+            else if(f === "FOE"){
+              document.getElementById("word12").innerHTML = "FOE";
+            }
+            else if(f === "OLE"){
+              document.getElementById("word13").innerHTML = "OLE";
+            }
+            else if(f === "REF"){
+              document.getElementById("word14").innerHTML = "REF";
+            }
+            else if(f === "LOWER"){
+              document.getElementById("word15").innerHTML = "LOWER";
+            }
+            else if(f === "ROWEL"){
+              document.getElementById("word16").innerHTML = "ROWEL";
+            }
+            else if(f === "FLOWER"){
+              document.getElementById("word17").innerHTML = "FLOWER";
+            }
+            else if(f === "FOWLER"){
+              document.getElementById("word18").innerHTML = "FOWLER";
+            }
+            else if(f === "REFLOW"){
+              document.getElementById("word19").innerHTML = "REFLOW";
+            }
+            else if(f === "WOLFER"){
+              document.getElementById("word20").innerHTML = "WOLFER";
+            }
+            else if(f === "FLEW"){
+              document.getElementById("word21").innerHTML = "FLEW";
+            }
+            else if(f === "FLOW"){
+              document.getElementById("word22").innerHTML = "FLOW";
+            }
+            else if(f === "FLOE"){
+              document.getElementById("word23").innerHTML = "FLOE";
+            }
+            else if(f === "FOWL"){
+              document.getElementById("word24").innerHTML = "FOWL";
+            }
+            else if(f === "FROE"){
+              document.getElementById("word25").innerHTML = "FROE";
+            }
+            else if(f === "FORE"){
+              document.getElementById("word26").innerHTML = "FORE";
+            }
+            else if(f === "FROW"){
+              document.getElementById("word27").innerHTML = "FROW";
+            }
+            else if(f === "LORE"){
+              document.getElementById("word28").innerHTML = "LORE";
+            }
+            else if(f === "ROLE"){
+              document.getElementById("word29").innerHTML = "ROLE";
+            }
+            else if(f === "WOLF"){
+              document.getElementById("word30").innerHTML = "WOLF";
+            }
+            else if(f === "LORE"){
+              document.getElementById("word31").innerHTML = "LORE";
+            }
+            else if(f === "WORE"){
+              document.getElementById("word32").innerHTML = "WORE";
+            }
+
+            else {
+              return;
+            }
+
+    }
+    
+    function showItem(event) {
+            alert(event.target.innerHTML);
+        }
+        </script>
+    </div>
+    <div class="col-sm-3">
+      <span class="text-light">help</span>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <span class="text-light">help</span>
+    </div>
+    <div class="col-sm-6 main-content">
+      <button type="button" class="btn btn-primary grad2" onclick="myFunction()" id="6BUTTON">O</button>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myFunction2()" id="1BUTTON">W</button>
+      <span class="text-light">,,,,</span>
+      <button type="button" class="btn btn-primary" onclick="myFunction3()" id="2BUTTON">L</button>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myFunction4()" id="3BUTTON">E</button>
+      <span class="text-light">,,,,</span>
+      <button type="button" class="btn btn-primary" onclick="myFunction5()" id="4BUTTON">R</button>
+      <span class="text-light">,,,,</span>
+      <button type="button" class="btn btn-primary" onclick="myFunction6()" id="5BUTTON">F</button>
+    </div>
+    <script>
+        var vortex1 = "O";
+        var vortex2 = "L";
+        var vortex3 = "E";
+        var vortex4 = "R";
+        var vortex5 = "F";
+        var vortex6 = "W";
+ 
+        function myFunction()
+        {
+           
+          
+            document.getElementById("txtFood").placeholder += "O";
+          document.getElementById("6BUTTON").disabled = true;
+        
+            
+        }
+        
+        function myFunction2()
+        {
+
+            document.getElementById("txtFood").placeholder += "W";
+          document.getElementById("1BUTTON").disabled = true;
+     
+        }
+        function myFunction3()
+        {
+
+            document.getElementById("txtFood").placeholder += "L";
+          document.getElementById("2BUTTON").disabled = true;
+   
+        }
+        function myFunction4()
+        {
+
+            document.getElementById("txtFood").placeholder += "E";
+          document.getElementById("3BUTTON").disabled = true;
+    
+        }
+        function myFunction5()
+        {
+
+            document.getElementById("txtFood").placeholder += "R";
+          document.getElementById("4BUTTON").disabled = true;
+       
+        }
+        function myFunction6()
+        {
+
+            document.getElementById("txtFood").placeholder += "F";
+          document.getElementById("5BUTTON").disabled = true;
+    
+        }
+        </script>
+
+    <div class="col-sm-3">
+      <span class="text-light">help</span>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <span class="text-light">help</span>
+    </div>
+    <div class="col-sm-6 main-content">
+        <div id="validation" class="list-group">
+          
+          <span id="word1">ELF</span>
+          <span id="word2">FOR</span>
+          <span id="word3">ORE</span>
+          <span id="word4">ROE</span>
+          <span id="word5">FRO</span>
+          <span id="word6">OWE</span>
+          <span id="word7">ROW</span>
+          <span id="word8">FEW</span>
+          <span id="word9">LOW</span>
+          <span id="word10">OWL</span>
+          <span id="word11">WOE</span>
+          <span id="word12">FOE</span>
+          <span id="word13">OLE</span>
+          <span id="word14">REF</span>
+          <span id="word15">LOWER</span>
+          <span id="word16">ROWEL</span>
+          <span id="word17">FLOWER</span>
+          <span id="word18">FOWLER</span>
+          <span id="word19">REFLOW</span>
+          <span id="word20">WOLFER</span>
+          <span id="word21">FLEW</span>
+          <span id="word22">FLOW</span>
+          <span id="word23">FLOE</span>
+          <span id="word24">FOWL</span>
+          <span id="word25">FROE</span>
+          <span id="word26">FORE</span>
+          <span id="word27">FROW</span>
+          <span id="word28">LORE</span>
+          <span id="word29">ROLE</span>
+          <span id="word30">WOLF</span>
+          <span id="word31">LORE</span>
+          <span id="word32">WORE</span>
+
+          
+          <script>
+            document.getElementById("word1").innerHTML = "";
+            document.getElementById("word2").innerHTML = "";
+            document.getElementById("word3").innerHTML = "";
+            document.getElementById("word4").innerHTML = "";
+            document.getElementById("word5").innerHTML = "";
+            document.getElementById("word6").innerHTML = "";
+            document.getElementById("word7").innerHTML = "";
+            document.getElementById("word8").innerHTML = "";
+            document.getElementById("word9").innerHTML = "";
+            document.getElementById("word10").innerHTML = "";
+            document.getElementById("word11").innerHTML = "";
+            document.getElementById("word12").innerHTML = "";
+            document.getElementById("word13").innerHTML = "";
+            document.getElementById("word14").innerHTML = "";
+            document.getElementById("word15").innerHTML = "";
+            document.getElementById("word16").innerHTML = "";
+            document.getElementById("word17").innerHTML = "";
+            document.getElementById("word18").innerHTML = "";
+            document.getElementById("word19").innerHTML = "";
+            document.getElementById("word20").innerHTML = "";
+            document.getElementById("word21").innerHTML = "";
+            document.getElementById("word22").innerHTML = "";
+            document.getElementById("word23").innerHTML = "";
+            document.getElementById("word24").innerHTML = "";
+            document.getElementById("word25").innerHTML = "";
+            document.getElementById("word26").innerHTML = "";
+            document.getElementById("word27").innerHTML = "";
+            document.getElementById("word28").innerHTML = "";
+            document.getElementById("word29").innerHTML = "";
+            document.getElementById("word30").innerHTML = "";
+            document.getElementById("word31").innerHTML = "";
+            document.getElementById("word32").innerHTML = "";
+
+          </script>
+        </div>
+    </div>
+
+    <div class="col-sm-3">
+      <span class="text-light">help</span>
+    </div>
+  </div>
+    
+</div>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+    
+
+      <span class="mb-3 mb-md-0 text-muted">© 2023 PSHS-CLC</span>
+    </div>
+    <span class="mb-3 mb-md-0 text-muted">Capule, Mancao, Rosales 9-Balingkilat</span>
+  </footer>
+</div>
+</body>
+</html>
+
